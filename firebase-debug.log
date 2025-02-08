@@ -1,0 +1,51 @@
+[debug] [2025-02-05T09:01:21.993Z] ----------------------------------------------------------------------
+[debug] [2025-02-05T09:01:22.000Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2025-02-05T09:01:22.000Z] CLI Version:   13.29.3
+[debug] [2025-02-05T09:01:22.000Z] Platform:      darwin
+[debug] [2025-02-05T09:01:22.000Z] Node Version:  v22.12.0
+[debug] [2025-02-05T09:01:22.000Z] Time:          Wed Feb 05 2025 10:01:22 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2025-02-05T09:01:22.000Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-05T09:01:22.002Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-05T09:01:22.109Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-05T09:01:22.109Z] > authorizing via signed-in user (xavier.stevene@gmail.com)
+[debug] [2025-02-05T09:01:22.109Z] [iam] checking project thestevenexavier for permissions ["firebase.projects.get"]
+[debug] [2025-02-05T09:01:22.109Z] Checked if tokens are valid: false, expires at: 1738315650777
+[debug] [2025-02-05T09:01:22.109Z] Checked if tokens are valid: false, expires at: 1738315650777
+[debug] [2025-02-05T09:01:22.110Z] > refreshing access token with scopes: []
+[debug] [2025-02-05T09:01:22.110Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-05T09:01:22.110Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-05T09:01:22.240Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-05T09:01:22.241Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-05T09:01:22.248Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier:testIamPermissions [none]
+[debug] [2025-02-05T09:01:22.248Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier:testIamPermissions x-goog-quota-user=projects/thestevenexavier
+[debug] [2025-02-05T09:01:22.248Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-05T09:01:22.356Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-05T09:01:22.356Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-02-05T09:01:22.949Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier:testIamPermissions 200
+[debug] [2025-02-05T09:01:22.949Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-05T09:01:22.949Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:22.949Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:22.949Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier [none]
+[debug] [2025-02-05T09:01:23.136Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier 200
+[debug] [2025-02-05T09:01:23.136Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/thestevenexavier {"projectNumber":"596132244392","projectId":"thestevenexavier","lifecycleState":"ACTIVE","name":"thestevenexavier","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-01-31T08:49:26.365181Z"}
+[info] 
+[info] === Serving from '/Users/stevene/www/thestevenexavier.com'...
+[info] 
+[debug] [2025-02-05T09:01:23.141Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:23.141Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:23.141Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thestevenexavier/sites 
+[debug] [2025-02-05T09:01:24.179Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/thestevenexavier/sites 200
+[debug] [2025-02-05T09:01:24.179Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/thestevenexavier/sites {"sites":[{"name":"projects/thestevenexavier/sites/thestevenexavier","defaultUrl":"https://thestevenexavier.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-02-05T09:01:24.180Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:24.180Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:24.180Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier/webApps/-/config [none]
+[debug] [2025-02-05T09:01:24.674Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier/webApps/-/config 200
+[debug] [2025-02-05T09:01:24.674Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier/webApps/-/config {"projectId":"thestevenexavier","storageBucket":"thestevenexavier.firebasestorage.app","apiKey":"AIzaSyBZuoIFp64pKPNkt-bGJQX8Q01mu5kRu_0","authDomain":"thestevenexavier.firebaseapp.com","messagingSenderId":"596132244392"}
+[debug] [2025-02-05T09:01:24.681Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:24.681Z] Checked if tokens are valid: true, expires at: 1738749681241
+[debug] [2025-02-05T09:01:24.682Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier [none]
+[debug] [2025-02-05T09:01:24.868Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier 200
+[debug] [2025-02-05T09:01:24.868Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thestevenexavier {"projectId":"thestevenexavier","projectNumber":"596132244392","displayName":"thestevenexavier","name":"projects/thestevenexavier","resources":{"hostingSite":"thestevenexavier"},"state":"ACTIVE","etag":"1_b42da268-2b5b-43c0-9e7e-e44d5af3fba5"}
+[info] i  hosting[thestevenexavier]: Serving hosting files from: out {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mout\u001b[22m"}}
+[info] ✔  hosting[thestevenexavier]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
